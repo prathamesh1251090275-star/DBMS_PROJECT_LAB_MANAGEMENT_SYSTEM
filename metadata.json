@@ -1,0 +1,6 @@
+{
+  "name": "Lab Equipment Management",
+  "description": "College Lab Equipment Management System for tracking inventory, issues, returns, and maintenance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

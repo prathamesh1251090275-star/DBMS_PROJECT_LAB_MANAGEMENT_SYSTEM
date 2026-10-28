@@ -1,0 +1,10 @@
+{
+  "listen_address": "127.0.0.1",
+  "port": 8080,
+  "db_path": "../database/LabEquipmentDB.db",
+  "schema_file": "../database/schema.sql",
+  "sample_file": "../database/sample_data.sql",
+  "load_sample_data": true,
+  "frontend_dir": "../frontend",
+  "session_timeout_minutes": 30
+}
