@@ -40,8 +40,10 @@ if (!fs.existsSync(dbDir)) {
 const dbPath = path.resolve(dbDir, 'LabEquipmentDB.db');
 const db = new DatabaseSync(dbPath);
 
-// Enable Foreign Keys
+// Configure SQLite
+db.exec('PRAGMA busy_timeout = 5000;');
 db.exec('PRAGMA foreign_keys = ON;');
+db.exec('PRAGMA journal_mode = WAL;');
 
 // Initialize schema and sample data if not already present
 const tableCheck = db.prepare("SELECT name FROM sqlite_master WHERE type='table' AND name='Equipment'").get();
